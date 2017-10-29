@@ -57,17 +57,9 @@ object SentimentTwiteer {
       println("Popular topic in last 10 sec (%s total)".format(rdd.count()))
       topList.foreach{case (count,tag)=>println("%s (%s tweets)".format(tag,count))}
     })*/
-
-
+    //start streaming
     scc.start()
     scc.awaitTermination()
-
-
-
-
-
-
-
 
   }
 
